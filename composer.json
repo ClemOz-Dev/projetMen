@@ -1,0 +1,20 @@
+{
+    "name": "cle/projet-men",
+    "authors": [
+        {
+            "name": "cle",
+            "email": "clejerhan@gmail.com"
+        }
+    ],
+
+    "require": {
+        "altorouter/altorouter": "1.1.0",
+        "symfony/var-dumper": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "OShop\\": "app/"
+        }
+    }
+
+}

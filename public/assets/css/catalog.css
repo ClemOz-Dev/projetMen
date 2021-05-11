@@ -1,0 +1,66 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    filter: sepia(40%);
+    filter: blur(0.04em) saturate(0.7) contrast(1.5) brightness(1.2);
+    
+    transition: .3s ease-in-out;
+}
+
+.column img:hover {
+    filter: sepia(0);   
+    
+}
+
+.current {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 6rem;
+    background-color: rgba(0,0,0, .6);
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.current img {   
+    width: 30%;
+    transform: none;
+    filter: none;
+    transition: none;
+    box-shadow: 10px 8px 5px black;
+    border: solid 1.1px black;
+}
+
+.current img:hover  {
+    transform: none;
+}
+
+.catalog img {
+    filter: sepia(80%);
+}
+
+.catalog img:hover {
+    filter: none;
+}
+
+
